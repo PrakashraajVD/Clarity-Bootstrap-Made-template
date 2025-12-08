@@ -129,7 +129,7 @@ nav button {
 #home {
   
   height: 100vh;
-  background-color: #02071b;
+  background-color: #05071e;
   color: white;
   display: flex;
   justify-content: center
@@ -245,4 +245,10 @@ nav button {
 #homeright img{
   width: 635.98px;
   height: 430.41px;
+}
+#about{
+  background-color: #02071b;
+  height: 100vh;
+  width: 100%;
+  color: white;
 }
