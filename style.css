@@ -14,7 +14,7 @@
 nav {
   display: flex;
   background-color: #1b1933;
-  width: 80%;
+  width: 85%;
   height: 60px;
   border-radius: 30px;
   justify-content: space-between;
@@ -77,6 +77,7 @@ nav button {
   display: none;
 }
 #secondlevelmenu:hover{
+    cursor: pointer;
     color: white;
     text-decoration: underline;
     text-decoration-color: #524dd3;
@@ -88,7 +89,7 @@ nav button {
   display: flex;
   flex-flow: column wrap;
   position: fixed;
-  top: 80px;
+  top: 60px;
   line-height: 35px;
   background-color: #1b1933;
   width: 200px;
@@ -99,8 +100,8 @@ nav button {
   display: flex;
   flex-flow: column wrap;
   position: fixed;
-  top: 140px;
-  left: 42.5%;
+  top: 120px;
+  left: 598px;
   background-color: #1b1933;
   line-height: 35px;
   width: 200px;
@@ -110,7 +111,18 @@ nav button {
 #fifthlevelmenu {
   display: none;
 }
+#fifthlevelmenu li{
+  color: #c8c6e3;
+}
 #home{
-  height: 200vh;
-  background-color: blue;
+  height: 100vh;
+  background-color: bisque;
+}
+#thirdlevelmenu>li:hover{
+  color: white;
+  cursor: pointer;
+}
+#fifthlevelmenu li:hover{
+  color: white;
+  cursor: pointer;
 }
