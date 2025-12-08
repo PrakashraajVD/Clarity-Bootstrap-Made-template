@@ -6,7 +6,7 @@
 #navbar {
   width: 100%;
   height: 100px;
-  background-color: #00002c;
+  background-color: #05071e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,16 +77,15 @@ nav button {
 #thirdlevelmenu {
   display: none;
 }
-#secondlevelmenu:hover{
-    cursor: pointer;
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: #524dd3;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
+#secondlevelmenu:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #524dd3;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
 }
 #secondlevelmenu:hover #thirdlevelmenu {
-
   display: flex;
   flex-flow: column wrap;
   position: fixed;
@@ -112,18 +111,138 @@ nav button {
 #fifthlevelmenu {
   display: none;
 }
-#fifthlevelmenu li{
+#fifthlevelmenu li {
   color: #c8c6e3;
 }
-#home{
+#thirdlevelmenu > li:hover {
+  color: white;
+  cursor: pointer;
+}
+#fifthlevelmenu li:hover {
+  color: white;
+  cursor: pointer;
+}
+#thirdlevelmenu li {
+  display: flex;
+  gap: 5px;
+}
+#home {
+  
   height: 100vh;
-  background-color: bisque;
-}
-#thirdlevelmenu>li:hover{
+  background-color: #02071b;
   color: white;
-  cursor: pointer;
+  display: flex;
+  justify-content: center
 }
-#fifthlevelmenu li:hover{
+#homeleft {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 40px;
+  width: 560px;
+  justify-content: center;
+}
+#homeleft > h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
   color: white;
-  cursor: pointer;
+  font-size: 56px;
+}
+#homeleft p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 19px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 30px;
+}
+
+#homebutton1 {
+  background-color: #524dd3;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  width: 140px;
+  border-radius: 40px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  border: none;
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    padding-top: 6px;
+  }
+}
+#homebutton2 {
+  background-color: transparent;
+  color: #524dd3;
+  font-size: 16px;
+  height: 50px;
+  width: 120px;
+  border-radius: 40px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  border: 2px solid #524dd3;
+  transition: all 0.3s;
+
+  &:hover {
+    color: white;
+    background-color: #524dd3;
+    cursor: pointer;
+    padding-top: 6px;
+  }
+}
+#homebuttons {
+  display: flex;
+  gap: 15px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+.stats{
+  width: 500px;
+}
+
+.homestats{
+  width: 140px;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap:5px;
+  align-items: center;
+}
+.homestats h1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 32px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #524dd3;
+}
+.homestats span {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #c8c6e3;
+}
+#homeright{
+  display: flex;
+  align-items: center;
+}
+#homeright img{
+  width: 635.98px;
+  height: 430.41px;
 }
