@@ -47,6 +47,7 @@ nav h1 {
 #toplevelmenu li {
   display: flex;
   align-items: center;
+  color: #c8c6e3;
 }
 #toplevelmenu a {
   text-decoration: none;
@@ -85,7 +86,7 @@ nav button {
     text-underline-offset: 7px;
 }
 #secondlevelmenu:hover #thirdlevelmenu {
-  color: #c8c6e3; 
+
   display: flex;
   flex-flow: column wrap;
   position: fixed;
