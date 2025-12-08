@@ -6,7 +6,7 @@
 #navbar {
   width: 100%;
   height: 100px;
-  background-color: #00002c; 
+  background-color: #00002c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,6 @@ nav h1 {
   color: #c8c6e3;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-
   font-style: normal;
 }
 #toplevelmenu img {
@@ -52,6 +51,13 @@ nav h1 {
 #toplevelmenu a {
   text-decoration: none;
   color: #c8c6e3;
+  &:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #524dd3;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+  }
 }
 nav button {
   background-color: #524dd3;
@@ -66,4 +72,45 @@ nav button {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   border: none;
+}
+#thirdlevelmenu {
+  display: none;
+}
+#secondlevelmenu:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #524dd3;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+}
+#secondlevelmenu:hover #thirdlevelmenu {
+  color: #c8c6e3; 
+  display: flex;
+  flex-flow: column wrap;
+  position: fixed;
+  top: 80px;
+  line-height: 35px;
+  background-color: #1b1933;
+  width: 200px;
+  padding: 20px;
+  border-radius: 5px;
+}
+#fourthlevelmenu:hover #fifthlevelmenu {
+  display: flex;
+  flex-flow: column wrap;
+  position: fixed;
+  top: 140px;
+  left: 42.5%;
+  background-color: #1b1933;
+  line-height: 35px;
+  width: 200px;
+  padding: 20px;
+  border-radius: 8px;
+}
+#fifthlevelmenu {
+  display: none;
+}
+#home{
+  height: 200vh;
+  background-color: blue;
 }
