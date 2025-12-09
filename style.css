@@ -319,6 +319,7 @@ nav button {
   height: 50px;
   border-radius: 30px;
   text-align: center;
+  border: none;
   background-color: #524dd3;
   color: white;
 }
