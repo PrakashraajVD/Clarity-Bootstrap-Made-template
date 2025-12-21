@@ -1162,10 +1162,9 @@ nav button {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-.tcardhrightimg{
+.tcardhrightimg {
   display: flex;
   flex-flow: row wrap;
-
 }
 .tcardhrightimg img {
   height: 14px;
@@ -1209,7 +1208,7 @@ nav button {
   width: 20px;
   height: 20px;
 }
-.tcard>hr {
+.tcard > hr {
   border: 1px solid #252439;
   width: 100%;
 }
@@ -1263,10 +1262,110 @@ nav button {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-#tbadge{
+#tbadge {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   column-gap: 40px;
+}
+#team {
+  width: 100%;
+  height: 200vh;
+  background-color: #02071b;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 40px;
+}
+#teamheader h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 32px;
+  font-style: normal;
+  color: white;
+}
+#teamheader p {
+  color: #e8e7f7;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+#teamheader {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#teambodyleft h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 30.4px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+#teambodyleft p {
+  color: #c6c5d6;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  width: 500px;
+  line-height: 25px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.tbspan span:first-child {
+  color: #524dd3;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 32px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.tbspan span:last-child {
+  color: #8d8ea0;
+  font-size: 14.4px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.tbspan{
+  display: flex;
+  flex-flow: column wrap;
+}
+.tbspan span{
+  text-align: center;
+}
+#teambodyspan{
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 30px;
 
+}
+#teambodyleft{
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+}
+#teambody{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+#teambodyright img{
+  width: 130px;
+  height: 130px;
+    object-fit: cover;
+  border-radius: 
+  
+    62% 38% 55% 45% /
+    50% 60% 40% 50%;
 }
