@@ -1277,6 +1277,7 @@ nav button {
   background-color: #02071b;
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   row-gap: 40px;
 }
 #teamheader h2 {
@@ -1523,7 +1524,7 @@ nav button {
   line-height: 23px;
   text-align: center;
 }
-.tfcontentlogo{
+.tfcontentlogo {
   width: 40px;
   height: 40px;
   display: flex;
@@ -1532,43 +1533,150 @@ nav button {
   align-items: center;
   justify-content: center;
 }
-.tfcontentlogo img{
+.tfcontentlogo img {
   width: 20px;
   height: 20px;
 }
-.tfcontentlogos{
+.tfcontentlogos {
   display: flex;
   flex-flow: row wrap;
   column-gap: 10px;
 }
-.tfcontent{
+.tfcontent {
   padding: 25px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   row-gap: 20px;
 }
-#teamfooterbadge{
+#teamfooterbadge {
   display: flex;
   flex-flow: row wrap;
   column-gap: 30px;
   justify-content: center;
 }
-.tfcontentlogo:hover{
+.tfcontentlogo:hover {
   transition: all 0.3s;
   background-color: white;
   transform: translateY(-5px);
   cursor: pointer;
 }
-.teamfootercard:hover{
+.teamfootercard:hover {
   transition: all 0.3s;
   cursor: pointer;
   transform: translateY(-10px);
 }
-#teamfooter{
+#teamfooter {
   padding-top: 50px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   row-gap: 80px;
+}
+#teamend {
+  width: fit-content;
+  height: fit-content;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #090b27;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 30px;
+  margin-top: 30px;
+  border: 1px solid #1c1b53;
+   background:
+    radial-gradient(
+      circle at top right,
+      rgba(99, 95, 210, 0.256),
+      transparent 15%
+    ),
+    linear-gradient(#0b0e2a, #0b0e2a);
+
+}
+.teamendimg {
+  width: 80px;
+  height: 80px;
+  background-color: #151643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.teamendimg img {
+  width: 32px;
+  height: 32px;
+}
+#teamendbutton {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 20px;
+}
+#teamendbutton button:first-child a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+#teamendbutton button:first-child {
+  background-color: #5e50da;
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 10px #514dd367;
+  }
+}
+#teamendbutton button {
+  padding: 12px 24px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  border: none;
+}
+#teamendbutton button:nth-child(2) a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #524dd3;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+#teamendbutton button:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid #524dd3;
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    background-color: #524dd3;
+    transform: translateY(-3px);
+  }
+  &:hover a {
+    color: white;
+  }
+}
+#teamend h4 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  font-size: 29px;
+}
+#teamend p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #a2b1cd;
+  font-size: 17px;
+  width: 600px;
+  text-align: center;
 }
