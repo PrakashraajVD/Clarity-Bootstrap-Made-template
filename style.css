@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  overflow-x: hidden;
+}
 #navbar {
   width: 100%;
   height: 100px;
@@ -130,6 +132,7 @@ nav button {
 }
 #home {
   height: 100vh;
+  width: 100%;
   background-color: #05071e;
   color: white;
   display: flex;
@@ -1687,7 +1690,8 @@ nav button {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  row-gap: 80px;
+  row-gap: 40px;
+
 }
 #contactheader h2 {
   font-family: "Quicksand", sans-serif;
@@ -1853,7 +1857,10 @@ label {
 #contactbodyright {
   display: flex;
   flex-flow: column wrap;
-  row-gap: 40px;
+  row-gap: 20px;
+}
+#contactbodyrightbadge{
+  margin-top: 50px;
 }
 .contactcard {
   width: 95%;
@@ -1956,7 +1963,6 @@ label {
   align-items: center;
   flex-flow: row wrap;
   column-gap: 40px;
-  transform: translateY(-35px);
   align-items: center;
   border-radius: 30px;
   background: linear-gradient(
@@ -1995,7 +2001,7 @@ label {
   flex-flow: column wrap;
   align-items: center;
   row-gap: 20px;
-  transform: translateY(-40px);
+
 }
 .connect h6 {
   font-family: "Quicksand", sans-serif;
