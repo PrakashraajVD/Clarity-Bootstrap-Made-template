@@ -1724,6 +1724,7 @@ nav button {
   row-gap: 20px;
   align-items: center;
   border: 2px solid #191a39;
+  border-top: 4px solid #524dd3;
 }
 #contactbodyleftimg {
   width: 60px;
