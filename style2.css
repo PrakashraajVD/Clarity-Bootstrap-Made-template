@@ -1,4 +1,5 @@
-* {
+@media only screen and (max-width: 600px) {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,7 +37,7 @@ nav h1 {
   color: white;
 }
 #toplevelmenu {
-  display: flex;
+  display: none;
   gap: 30px;
   list-style: none;
   color: #c8c6e3;
@@ -131,19 +132,26 @@ nav button {
   gap: 5px;
 }
 #home {
-  height: 100vh;
+  height: fit-content;
+  padding-bottom: 100px;
   width: 100%;
   background-color: #05071e;
   color: white;
   display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   justify-content: center;
+  row-gap: 15px;
 }
 #homeleft {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   row-gap: 40px;
-  width: 560px;
+  max-width: 400px;
+  width: 100%;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 #homeleft > h1 {
   font-family: "Quicksand", sans-serif;
@@ -152,7 +160,9 @@ nav button {
   font-size: 25px;
   font-style: normal;
   color: white;
-  font-size: 56px;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
 }
 #homeleft p {
   font-family: "Roboto", sans-serif;
@@ -162,6 +172,8 @@ nav button {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   line-height: 30px;
+  width: 92%;
+  text-align: center;
   color: #c8c6e3;
 }
 
@@ -212,14 +224,13 @@ nav button {
 }
 .stats {
   display: flex;
-  justify-content: space-between;
-}
-.stats {
-  width: 500px;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .homestats {
-  width: 140px;
+  width: fit-content;
+  padding: 30px;
   display: flex;
   flex-flow: column wrap;
   row-gap: 5px;
@@ -229,39 +240,46 @@ nav button {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: #524dd3;
+  text-align: center;
 }
 .homestats span {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14.4px;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: #c8c6e3;
+  text-align: center;
 }
-#homeright {
+#homeright{
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 #homeright img {
-  width: 635.98px;
-  height: 430.41px;
+ width: 70%;
+ height: auto;
+
 }
 #about {
   background-color: #02071b;
-  height: 100vh;
+  height: fit-content;
   width: 100%;
   display: flex;
+  flex-flow: column nowrap;
+  padding-top: 20px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 #aboutleft {
-  width: 540px;
+  width: fit-content;
+  padding: 14px;
   display: flex;
   flex-flow: column wrap;
   row-gap: 30px;
@@ -292,7 +310,7 @@ nav button {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 15px;
+  font-size: 14px;
 }
 #aboutleft h1 {
   color: white;
@@ -306,7 +324,8 @@ nav button {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 16px;
+  width: 100%;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   line-height: 30px;
@@ -328,18 +347,20 @@ nav button {
   color: white;
 }
 #aboutstats {
-  width: 300px;
-  height: 100px;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 10px;
   background-color: #1b1933;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
   position: relative;
   z-index: 2;
-  left: 390px;
-  top: 170px;
+  left: 250px;
+  top: 90px;
   box-shadow: 0 0 5px 1px #c8c6e3;
 }
 .astats h1 {
@@ -348,7 +369,7 @@ nav button {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
 }
 .astats span {
@@ -363,7 +384,7 @@ nav button {
 #aimg2 {
   width: 90%;
   bottom: 200px;
-  left: 40px;
+  left: 20px;
   position: relative;
   z-index: 1;
   border: 5px solid #c8c6e3;
@@ -374,27 +395,32 @@ nav button {
   width: 43%;
   position: relative;
   z-index: 2;
-  left: 10px;
-  top: 255px;
+  left: 0px;
+  top: 50px;
   border: 3px solid;
   border-color: rgba(240, 248, 255, 0.517);
   border-radius: 8px;
   box-shadow: 0 0 5px 1px #c8c6e3;
 }
 #aboutright {
-  width: 50%;
+  position: relative;
+  top: 0px;
+  height: fit-content;
+  width: fit-content;
+  padding: 0px 12px;
 }
 
 #services {
   background-color: #02071b;
-  width: 100%;
-  height: 200vh;
+  width: fit-content;
+  padding: 0px 10px 20px;
+  height: fit-content;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   row-gap: 40px;
   align-items: center;
 }
-#servicetop h2 {
+.servicetop h2 {
   color: white;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -402,31 +428,29 @@ nav button {
   font-style: normal;
   font-size: 32px;
 }
-#servicetop span {
+.servicetop span {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: #c8c6e3;
+  text-align: center;
 }
-#servicetop {
-  padding-top: 60px;
-  height: 180px;
+.servicetop {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 #servicemid {
-  height: 680px;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
   display: flex;
-  flex-flow: row wrap;
-  column-gap: 20px;
-  padding-top: 30px;
-  justify-content: center;
+  flex-flow: column nowrap;
+  row-gap: 20px;
   align-items: center;
 }
 .servicecard img {
@@ -498,13 +522,13 @@ nav button {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 28px;
+  font-size: 24px;
 }
 #servicefooter p {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: #c8c6e3;
@@ -516,17 +540,20 @@ nav button {
   font-size: 16px;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  width: 185px;
-  height: 50px;
   border-radius: 30px;
   text-align: center;
   border: none;
   background-color: #524dd3;
   color: white;
+  height: fit-content;
+  width: fit-content;
+  padding: 14px 32px;
 }
 #servicefooter {
-  height: 250px;
-  width: 80%;
+  height: fit-content;
+  width: fit-content;
+  padding: 40px 30px;
+  margin: 0px 10px;
   background-color: #1b1933;
   border-radius: 25px;
   display: flex;
@@ -534,6 +561,7 @@ nav button {
   row-gap: 25px;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .servicecardbadge {
   position: absolute;
@@ -557,21 +585,18 @@ nav button {
   border: none;
 }
 #portfolio {
-  width: 100%;
+  width: fit-content;
   height: fit-content;
-  padding-bottom: 100px;
+  padding: 10px 10px 0px;
   background-color: #02071b;
   display: flex;
-  align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   row-gap: 30px;
 }
 #portfoliobutton button:first-child {
   background-color: #524dd3;
   color: white;
-  font-size: 14px;
-  height: 40px;
-  width: 110px;
+  font-size: 12.8px;
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -588,9 +613,10 @@ nav button {
 #portfoliobutton button:not(:first-child) {
   background-color: transparent;
   color: #c8c6e3;
-  font-size: 14px;
-  height: 40px;
-  width: 110px;
+  font-size: 12.8px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 18px;
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -608,8 +634,13 @@ nav button {
   }
 }
 #portfoliobutton {
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+  padding: 10px;
+  align-items: center;
   gap: 10px;
 }
 #portfoliobadge {
@@ -785,8 +816,10 @@ nav button {
   }
 }
 #portfoliofooter {
-  height: 230px;
-  width: 80%;
+  margin: 0px 10px;
+  height: fit-content;
+  width: fit-content;
+  padding: 40px;
   background-color: #15162f;
   border-radius: 25px;
   display: flex;
@@ -794,6 +827,7 @@ nav button {
   row-gap: 10px;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 30px;
 }
 #portfoliofooter h4 {
@@ -813,10 +847,9 @@ nav button {
   font-variation-settings: "wdth" 100;
 }
 .pfooterbtn {
-  margin-top: 30px;
   display: flex;
-  flex-flow: row wrap;
-  column-gap: 20px;
+  flex-flow: column wrap;
+  row-gap: 20px;
   align-items: center;
 }
 .pfooterbtn button {
@@ -858,19 +891,24 @@ nav button {
 #whyus {
   width: 100%;
   height: fit-content;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background-color: #02071b;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
   row-gap: 50px;
 }
+
 #wheader {
+  height: fit-content;
+  width: 100%;
+  padding: 50px 15px 0px;
   color: white;
   text-align: center;
   display: flex;
   flex-flow: column wrap;
-  gap: 15px;
+  align-items: center;
+  row-gap: 15px;
 }
 #wheader h2 {
   font-family: "Quicksand", sans-serif;
@@ -880,6 +918,7 @@ nav button {
   font-style: normal;
 }
 #wheader p {
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 450;
@@ -889,15 +928,17 @@ nav button {
 }
 #wbadges {
   width: 100%;
-  justify-content: center;
   display: flex;
-  flex-flow: row wrap;
-  column-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
+
 .wcard {
-  margin-top: 30px;
-  width: 380px;
-  height: 430px;
+  width: 90%;
+  max-width: 380px;
+  height: fit-content;
+  padding: 30px 20px;
   background-color: #131428;
   border-radius: 30px;
   display: flex;
@@ -923,7 +964,7 @@ nav button {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   font-style: normal;
 }
@@ -940,14 +981,14 @@ nav button {
 }
 .wcard hr {
   border: 1px solid #28293d;
-  width: 340px;
+  width: 100%;
 }
 #sone {
   color: #524dd3;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
@@ -968,36 +1009,48 @@ nav button {
 }
 #wfooter {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 10px;
+  padding-right: 5px;
+  width: 100%;
 }
 
+
 #wimg {
-  width: 40%;
-  height: fit-content;
+  width: 280px;
+  max-width: 90%;
+  height: auto;
 }
+
 #wfright > h3 {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   color: white;
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
-  width: 450px;
-  line-height: 40px;
+  width: fit-content;
+  height: fit-content;
 }
 #wfright {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
   row-gap: 30px;
 }
+
 #wfright > p {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   color: #afbac2;
   font-size: 18px;
   font-weight: 350;
-  width: 550px;
+  width: fit-content;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   line-height: 30px;
@@ -1005,7 +1058,10 @@ nav button {
 .wfrightlist {
   display: flex;
   column-gap: 20px;
+  justify-content: center;
+  width: 100%;
 }
+
 .wfrightlist img {
   width: 60px;
   height: 60px;
@@ -1030,17 +1086,16 @@ nav button {
   color: #bbbacc;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-optical-sizing: auto;
   font-weight: 500;
-  width: 450px;
+  width: 100%;
   line-height: 25px;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
+
 #wbutton {
   display: flex;
-  flex-flow: row wrap;
-  column-gap: 20px;
+  flex-flow: column nowrap;
+  row-gap: 20px;
+  width: 100%;
 }
 #wbutton button:first-child a {
   text-decoration: none;
@@ -1061,9 +1116,9 @@ nav button {
   }
 }
 #wbutton button {
-  padding: 15px 30px;
+  padding: 12px 25px;
   height: fit-content;
-  width: fit-content;
+  width: 100%;
   border-radius: 30px;
   border: none;
 }
@@ -1092,9 +1147,11 @@ nav button {
 }
 #testimonials {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  padding: 60px 10px 20px;
+  align-items: center;
   row-gap: 70px;
   background-color: #02071b;
   align-items: center;
@@ -1114,6 +1171,7 @@ nav button {
   color: #bbbacc;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  text-align: center;
 }
 #theader {
   display: flex;
@@ -1268,9 +1326,9 @@ nav button {
 }
 #tbadge {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  column-gap: 40px;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 40px;
 }
 #team {
   padding-top: 120px;
@@ -2179,4 +2237,5 @@ label {
   flex-flow: column wrap;
   row-gap: 15px;
   align-items: center;
+}
 }
