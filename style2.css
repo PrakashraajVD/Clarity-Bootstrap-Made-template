@@ -1331,16 +1331,13 @@ nav button {
   row-gap: 40px;
 }
 #team {
-  padding-top: 120px;
   width: 100%;
-  height: fit-content;
-  padding-bottom: 20px;
-  background-color: #02071b;
+  padding: 0;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
-  row-gap: 40px;
 }
+
 #teamheader h2 {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -1358,30 +1355,52 @@ nav button {
   font-variation-settings: "wdth" 100;
 }
 #teamheader {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+
   display: flex;
-  flex-flow: column wrap;
-  row-gap: 20px;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  text-align: center;
 }
+
+#teamheader h2,
+#teamheader p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+#teamheader,
+#teamheader * {
+  transform: none !important;
+  margin-left: 0 !important;
+}
+
+
 #teambodyleft h3 {
   color: white;
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
-  font-style: normal;
   font-size: 30.4px;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
 }
+
 #teambodyleft p {
-  color: #c6c5d6;
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 450;
-  width: 500px;
-  line-height: 25px;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+  width: 100%;
+  max-width: 340px;
+  text-align: left;
+  margin: 0 auto;
 }
+
+
+
 .tbspan span:first-child {
   color: #524dd3;
   font-family: "Roboto", sans-serif;
@@ -1409,21 +1428,29 @@ nav button {
 }
 #teambodyspan {
   display: flex;
-  flex-flow: row wrap;
-  column-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
 }
+
 #teambodyleft {
   display: flex;
-  flex-flow: column wrap;
-  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
 }
+
+
 #teambody {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
   margin-top: 30px;
-  column-gap: 220px;
+  row-gap: 40px;
 }
+
 .timg > img {
   width: 150px;
   height: 150px;
@@ -1439,8 +1466,10 @@ nav button {
   display: flex;
   flex-flow: column wrap;
   row-gap: 50px;
-  transform: translateX(-80px);
+  transform: none;
+  align-items: center;
 }
+
 .teambodyrighth {
   display: flex;
   flex-flow: row wrap;
@@ -1456,9 +1485,7 @@ nav button {
   z-index: 2;
   border-radius: 48% 52% 55% 45% / 38% 40% 60% 62%;
 }
-.timg > img {
-  transform: translateY(-150px);
-}
+
 .teambodyrighth .timg:last-child {
   transform: translateY(50px);
 }

@@ -394,7 +394,7 @@ nav button {
   row-gap: 40px;
   align-items: center;
 }
-#servicetop h2 {
+.servicetop h2 {
   color: white;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -402,7 +402,7 @@ nav button {
   font-style: normal;
   font-size: 32px;
 }
-#servicetop span {
+.servicetop span {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -411,7 +411,7 @@ nav button {
   font-variation-settings: "wdth" 100;
   color: #c8c6e3;
 }
-#servicetop {
+.servicetop {
   padding-top: 60px;
   height: 180px;
   display: flex;
